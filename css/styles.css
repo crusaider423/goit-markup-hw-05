@@ -459,15 +459,14 @@ input {
 .footer-social-icon {
   fill: #f4f4fd;
 }
-.footer-form {
+.footer-form-cover {
   display: flex;
   gap: 24px;
   align-items: flex-end;
 }
-.footer-form-label {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+
+.footer-form-text {
+  margin-bottom: 16px;
 
   color: var(--white, #fff);
   font-size: 16px;
@@ -475,16 +474,23 @@ input {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
 }
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
 .foter-input-email {
-  padding: 8px 16px;
+  padding-left: 16px;
   border-radius: 4px;
   border: 1px solid var(--white, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
+  width: 264px;
+  height: 40px;
   color: var(--white, #fff);
   font-size: 12px;
   line-height: calc(24 / 12); /* 200% */
   letter-spacing: 0.04em;
+  background-color: transparent;
 }
 .footer-form-btn {
   color: var(--white, #fff);
@@ -494,9 +500,9 @@ input {
   line-height: calc(24 / 16);
   letter-spacing: 0.04em;
 
-  padding: 8px 64px 8px 24px;
-  /* width: 165px;
-  height: 40px; */
+  
+  min-width: 165px;
+  height: 40px; 
   background: var(--iris, #4d5ae5);
   border-radius: 4px;
   border: none;
@@ -504,19 +510,14 @@ input {
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  display: block;
+  display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.footer-form-btn-wrap {
-  position: relative;
-}
 .footer-btn-icon {
-  position: absolute;
-  left: 117px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: transparent;
-
+   fill: transparent;
+margin-left: 16px;
   transition: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -701,12 +702,15 @@ input {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
+.modal-form-wrap{
+ margin-bottom: 8px;
+}
 .modal-input-wrap {
 }
 .modal-form-label {
   color: #8e8f99;
   font-size: 12px;
-  line-height: 14px; /* 116.667% */
+  line-height: calc(14 / 12); /* 116.667% */
   letter-spacing: 0.48px;
   margin-bottom: 4px;
 }
