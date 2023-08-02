@@ -771,7 +771,6 @@ input {
   display: flex;
   margin-bottom: 24px;
   position: relative;
-  
 }
 .modal-form-checkbox {
 }
@@ -814,18 +813,22 @@ input {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
- }
-.modal-checkbox-ref{
+}
+.modal-checkbox-ref {
   color: var(--accent-iris);
   font-family: inherit;
-font-size: 12px;
-font-weight: 400;
-line-height: 1.33;
-letter-spacing: 0.04;
-margin-left: 4px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04;
+  margin-left: 4px;
 }
-.modal-span-checkbox:hover,
+/* .modal-span-checkbox:hover,
 .modal-span-checkbox:focus {
+  background-color: var(--pressed_state-ocean);
+  border: none;
+  fill: var(--cloud); 
+} */
+.modal-form-checkbox:checked + .modal-label-checkbox .modal-span-checkbox {
   background-color: var(--pressed_state-ocean);
   border: none;
   fill: var(--cloud);
