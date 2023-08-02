@@ -515,24 +515,21 @@
               placeholder="Text input"
             ></textarea>
           </div>
-
+          <!-- -------------------------------------------------------------- -->
           <div class="modal-checkbox-wrap">
-            <label for="user-privacy" class="modal-label-checkbox">
-              I accept the terms and conditions of the
-              <span class="modal-span-checkbox">Privacy Policy</span></label
-            >
             <input
               type="checkbox"
-              class="visually-hidden"
+              class="visually-hidden modal-form-checkbox"
               name="user-privacy"
               id="user-privacy"
               value="true"
             />
-            <svg class="modal-checkbox-icon" width="10" height="8">
-              <use href="./images/icons.svg#icon-mark"></use>
-            </svg>
-
-            >
+            <label for="user-privacy" class="modal-label-checkbox">
+              I accept the terms and conditions of the
+              <span class="modal-span-checkbox">
+                <svg class="modal-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-mark"></use></svg></span
+            ><a href="" class="modal-checkbox-ref">Privacy Policy</a></label>
           </div>
           <button type="submit" class="modal-form-btn">Send</button>
         </form>
