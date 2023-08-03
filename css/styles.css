@@ -766,11 +766,6 @@ input {
 .modal-form-input:focus + .modal-input-icon {
   fill: var(--accent-iris);
 }
-.modal-form-textarea{
-  color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
-line-height: 1.6; /* 116.667% */
-letter-spacing: 0.04em;
-}
 /* * ---checkox--- */
 .modal-checkbox-wrap {
   display: flex;
